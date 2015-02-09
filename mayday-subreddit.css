@@ -1,0 +1,528 @@
+/*
+
+red: rgb(207, 31, 51)
+dark blue: rgb(14, 60, 109)
+silver: silver
+light gray: #f0f0f0
+
+*/
+
+#header {
+    border-bottom-color: rgb(14, 60, 109);
+}
+
+#header-bottom-right {
+    background: transparent;
+    bottom: auto;
+    position: absolute;
+    right: 8px;
+    top: 22px;
+}
+
+#header-bottom-left {
+    background: white;
+    background-image: url(%%mayday-reddit-header%%);
+    background-position: top center;
+    background-size: 1800px 210px;
+    min-height: 190px;
+}
+
+#header-bottom-left .tabmenu li {
+    margin: 0;
+}
+
+#header-bottom-left .tabmenu {
+    display: block;
+    font-weight: 700;
+    height: 32px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 173px;
+}
+
+#header-bottom-left .tabmenu li a {
+    background: linear-gradient(to bottom, rgb(26, 85, 141), rgb(3, 37, 79));
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+#header-bottom-left .tabmenu li a: hover {
+    background: #31558f;
+    color: white;
+}
+
+#header-bottom-left .tabmenu li.selected a {
+    background-color: #31558f;
+    border: 0;
+    color: white !important;
+    text-decoration: underline;
+}
+
+.hover.pagename.redditname {
+    color: rgb(14, 60, 109);
+    font-size: 18px;
+    left: 8px;
+    position: absolute;
+    top: 24px;
+}
+
+.side .titlebox .redditname, .side .titlebox .redditname a {
+    color: rgb(14, 60, 109);
+    font-weight: normal;
+}
+
+.side .titlebox .redditname {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.side .titlebox .redditname:before {
+    content: 'Welcome to /r/';
+}
+
+.side .titlebox .redditname:after {
+    content: '!';
+}
+
+.side .title, .side .md h1 {
+    background: rgb(14, 60, 109);
+    margin-left: -29px;
+    margin-right: -20px;
+    padding: 0.5em;
+    position: relative;
+}
+
+.side .title:after, .side .md h1:after {
+    background: linear-gradient(45deg, white 0%, white 49%, rgb(14, 60, 109) 50%, black 100%);
+    bottom: -10px;
+    content: '';
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 10px;
+}
+
+.side .title h1 {
+    color: white;
+    padding-left: 4px;
+}
+
+.side .md h1 {
+    color: white;
+    font-size: 13px;
+    padding: 4px 0 3px 10px;
+    text-transform: uppercase;
+}
+
+.side .spacer:nth-child(9) .helplink {
+    color: silver;
+    position: relative;
+    top: 1px;
+    z-index: 10;
+}
+
+.side .spacer:nth-child(9) .helplink:hover {
+    text-decoration: underline;
+}
+
+.side .linkinfo {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 0;
+    margin: 0 -4px;
+    padding: 10px 19px;
+}
+
+.side .linkinfo .score {
+    margin: 7px 0 5px 0;
+}
+
+.side .linkinfo .score,
+.side .linkinfo .score .number,
+.side .linkinfo .score .word {
+    font-size: 12px ! important;
+}
+
+.side .linkinfo .date,
+.side .linkinfo .shortlink,
+.side .linkinfo .shortlink input {
+    font-size: 10px ! important;
+}
+
+.pagename a {
+    color: rgb(14, 60, 109);
+}
+
+#sr-header-area {
+    background: rgba(14, 60, 109, 0.75);
+    border-bottom-color: rgb(14, 60, 109);
+    color: white;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#sr-more-link {
+    background-color: rgba(14,60,109,0.55);
+    color: white;
+}
+
+.sr-bar a, .dropdown.srdrop .title {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sr-bar a:hover, .dropdown.srdrop .title:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+#header-img.default-header {
+    bottom: 2px;
+    height: 42px;
+    margin: 0 0.5em 0 0;
+    position: absolute;
+}
+
+.content {
+    background: white;
+    margin: 0 300px 0 0;
+    padding: 21px 1em 1em;
+}
+
+.sidecontentbox .content {
+    border: none;
+}
+
+.side {
+    border-left: solid 1px silver;
+    margin-top: 0;
+    padding-left: 4px;
+    padding-top: 14px;
+}
+
+.side .create .spacer {
+    display: none;
+}
+
+.side .sidecontentbox,
+.side .titlebox {
+    padding: 0 15px;
+}
+
+.linklisting .link {
+    background: white;
+    border-radius: 0;
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+
+.link .usertext .md {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.link.last-clicked {
+    border: dotted 1px rgba(0, 0, 0, 0.1);
+    margin-left: -1px;
+}
+
+.morelink, .morelink:hover {
+    /*background: linear-gradient(to right, rgb(207, 31, 51), rgb(239, 46, 36), rgb(239, 46, 36), rgb(207, 31, 51));*/
+    background: linear-gradient(to right, rgb(3, 37, 79), rgb(26, 85, 141), rgb(26, 85, 141), rgb(3, 37, 79));
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+    color: white;
+    height: 36px;
+    margin: 0 1em;
+    text-transform: capitalize;
+}
+
+.create .morelink {
+    box-shadow: none;
+}
+
+.morelink a, .morelink a:hover {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 36px;
+    position: relative;
+}
+
+.morelink a:hover, .morelink:hover a:after {
+    text-decoration: underline;
+}
+
+.morelink a[href$="/submit"] {
+    color: transparent;
+}
+
+.morelink a[href$="/submit"]:after {
+    bottom: 0;
+    color: white;
+    content: 'submit a link';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.morelink a[href$="/submit?selftext=true"] {
+    color: transparent;
+}
+
+.morelink a[href$="/submit?selftext=true"]:after {
+    bottom: 0;
+    color: white;
+    content: 'start a discussion';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.morelink a[href="https://www.reddit.com/subreddits/create"] {
+    background: #f0f0f0;
+    border: solid 1px silver;
+    border-radius: 0;
+    color: gray;
+    font-weight: normal;
+}
+
+.morelink .nub {
+    display: none;
+}
+
+.titlebox .fancy-toggle-button {
+    display: block;
+}
+
+.option.active {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: capitalize;
+    width: auto;
+}
+
+.option.active.add, .option.active.remove {
+    border: none;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+    color: white;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.option.active.add {
+    background: linear-gradient(to right, rgb(207, 31, 51), rgb(239, 46, 36), rgb(239, 46, 36), rgb(207, 31, 51));
+    margin: 7px 0;
+}
+
+.option.active.remove {
+    background: #f0f0f0;
+    border: solid 1px silver;
+    box-shadow: none;
+    color: gray;
+    font-weight: normal;
+}
+
+.option.active.remove:hover, .option.active.add:hover {
+    text-decoration: underline;
+}
+
+.subscribers, .users-online {
+    color: rgb(14, 60, 109);
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    width: 130px;
+    white-space: nowrap;
+}
+
+.subscribers {
+    border-right: 1px solid rgb(14, 60, 109);
+    border-radius: 3px 0 0 3px;
+}
+
+.subscribers .number, .users-online .number {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.subscribers .word, .users-online .word {
+    display: none;
+}
+
+.users-online:after, .subscribers:after {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.subscribers:after {
+    content: 'citizens';
+}
+
+.users-online:before {
+    display: none;
+}
+
+.users-online:after {
+    content: 'online';
+}
+
+.link .title {
+    margin-right: 0;
+}
+
+.domain {
+    color: transparent;
+    position: relative;
+    top: -1px;
+}
+
+.domain a {
+    color: silver;
+}
+
+.tagline {
+    margin-bottom: 2px;
+    margin-top: 6px;
+}
+
+.flat-list .option.active, .entry .buttons li a {
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+
+.thing {
+    margin-right: 15px;
+    position: relative;
+}
+
+.link .rank {
+    color: silver;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    font-size: 10px;
+    height: 11px;
+    margin: 19px 0 0 0;
+    padding: 0.25em;
+    position: relative;
+}
+
+.thumbnail {
+    margin-right: 10px;
+}
+
+.tagline .stickied-tagline {
+    color: silver;
+    font-style: italic;
+}
+
+.stickied .rank:after {
+    content: '★';
+    left: 0;
+    line-height: 11px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.thing.stickied a.title {
+    color: rgb(207, 31, 51) ! important;
+}
+
+.link .midcol {
+    font-size: 14px;
+    margin-left: 14px;
+}
+
+.arrow.up, .arrow.upmod, .arrow.down, .arrow.downmod {
+    background: none;
+    color: silver;
+    position: relative;
+    text-align: center;
+}
+
+.arrow.upmod, .link .score.likes {
+    color: rgb(207, 31, 51);
+}
+
+.arrow.downmod, .link .score.dislikes {
+    color: rgb(14, 60, 109);
+}
+
+.arrow.up:after, .arrow.upmod:after, .arrow.down:after, .arrow.downmod:after {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.arrow.up:after, .arrow.upmod:after {
+    content: '▲';
+}
+
+.arrow.down:after, .arrow.downmod:after {
+    content: '▼︎';
+}
+
+.link .score {
+    color: silver;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    position: relative;
+    top: 2px;
+}
+
+.comment .child {
+    border-left: solid 1px #f0f0f0;
+}
+
+.side {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+.content {
+    font-family: verdana, 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+#search {
+    text-align: center;
+}
+
+#search input[type=text] {
+    margin-left: -10px;
+    text-align: center;
+    width: 270px;
+}
+
+/* BEGIN: FLAIR */
+
+.linkflairlabel { border-radius: 0 ! important; max-width: 18em ! important; }
+.linkflair-mayday-official .linkflairlabel        { background-color: #ff2d21; border-color: #ff2d21; color: white; }
+.linkflair-mayday-in-the-news .linkflairlabel     { background-color: #499bc9; border-color: #499bc9; color: white; }
+.linkflair-mayday-discussion .linkflairlabel      { background-color: #009051; border-color: #009051; color: white; }
+.linkflair-mayday-anti-corruption .linkflairlabel { background-color: #bfbfbf; border-color: #bfbfbf; color: white; }
+.linkflair-mayday-media .linkflairlabel           { background-color: #9d45b8; border-color: #9d45b8; color: white; }
+.linkflair-mayday-humor .linkflairlabel           { background-color: #f1d130; border-color: #f1d130; color: #404040; }
+.linkflair-mayday-events .linkflairlabel          { background-color: #ffa93a; border-color: #ffa93a; color: #404040; }
+.linkflair-mayday-moderator .linkflairlabel       { background-color: black;   border-color: black;   color: white; }
+
+/* END: FLAIR */
