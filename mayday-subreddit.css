@@ -519,10 +519,11 @@ light gray: #f0f0f0
 .linkflair-mayday-official .linkflairlabel        { background-color: #ff2d21; border-color: #ff2d21; color: white; }
 .linkflair-mayday-in-the-news .linkflairlabel     { background-color: #499bc9; border-color: #499bc9; color: white; }
 .linkflair-mayday-discussion .linkflairlabel      { background-color: #009051; border-color: #009051; color: white; }
-.linkflair-mayday-anti-corruption .linkflairlabel { background-color: #bfbfbf; border-color: #bfbfbf; color: white; }
+.linkflair-mayday-anti-corruption .linkflairlabel { background-color: #cccccc; border-color: #cccccc; color: #404040; }
 .linkflair-mayday-media .linkflairlabel           { background-color: #9d45b8; border-color: #9d45b8; color: white; }
-.linkflair-mayday-humor .linkflairlabel           { background-color: #f1d130; border-color: #f1d130; color: #404040; }
-.linkflair-mayday-events .linkflairlabel          { background-color: #ffa93a; border-color: #ffa93a; color: #404040; }
+.linkflair-mayday-humor .linkflairlabel           { background-color: #ffff00; border-color: #ffff00; color: #404040; }
+.linkflair-mayday-events .linkflairlabel          { background-color: #ff9900; border-color: #ff9900; color: #404040; }
+.linkflair-mayday-actions .linkflairlabel         { background-color: #99ffff; border-color: #99ffff; color: #404040; }
 .linkflair-mayday-moderator .linkflairlabel       { background-color: black;   border-color: black;   color: white; }
 
 /* END: FLAIR */
