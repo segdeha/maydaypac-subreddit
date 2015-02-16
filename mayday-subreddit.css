@@ -198,6 +198,17 @@ light gray: #f0f0f0
     padding: 21px 1em 1em;
 }
 
+.searchpane {
+    margin-right: 10px;
+}
+
+.search-summary .content {
+    margin: 0;
+    padding: 1em;
+    position: relative;
+    top: 4px;
+}
+
 .sidecontentbox .content {
     border: none;
 }
@@ -509,11 +520,11 @@ light gray: #f0f0f0
     font-family: verdana, 'helvetica neue', helvetica, arial, sans-serif;
 }
 
-#search {
+.side #search {
     text-align: center;
 }
 
-#search input[type=text] {
+.side #search input[type=text] {
     margin-left: -10px;
     text-align: center;
     width: 270px;
@@ -555,25 +566,15 @@ light gray: #f0f0f0
 
 /* BEGIN: FLAIR FILTERS */
 
-html:lang(md) .link:not(.linkflair-mayday-official)        { display: none; }
-html:lang(nw) .link:not(.linkflair-mayday-in-the-news)     { display: none; }
-html:lang(ds) .link:not(.linkflair-mayday-discussion)      { display: none; }
-html:lang(ac) .link:not(.linkflair-mayday-anti-corruption) { display: none; }
-html:lang(me) .link:not(.linkflair-mayday-media)           { display: none; }
-html:lang(ot) .link:not(.linkflair-mayday-humor)           { display: none; }
-html:lang(ev) .link:not(.linkflair-mayday-events)          { display: none; }
-html:lang(at) .link:not(.linkflair-mayday-actions)         { display: none; }
-html:lang(mo) .link:not(.linkflair-mayday-moderator)       { display: none; }
-
-.side a[href$='#md'],
-.side a[href$='#nw'],
-.side a[href$='#ds'],
-.side a[href$='#ac'],
-.side a[href$='#me'],
-.side a[href$='#ot'],
-.side a[href$='#ev'],
-.side a[href$='#at'],
-.side a[href$='#mo'],
+.side a[href$='Official'],
+.side a[href$='News'],
+.side a[href$='Discussion'],
+.side a[href$='Views'],
+.side a[href$='Media'],
+.side a[href$='Topic'],
+.side a[href$='Event'],
+.side a[href$='Action'],
+.side a[href$='Moderator'],
 .side .md a[href$='/r/MaydayPAC/'] {
     display: inline-block;
     margin: 0.25em;
@@ -581,27 +582,27 @@ html:lang(mo) .link:not(.linkflair-mayday-moderator)       { display: none; }
     position: relative;
 }
 
-.side a[href$='#md']:hover,
-.side a[href$='#nw']:hover,
-.side a[href$='#ds']:hover,
-.side a[href$='#ac']:hover,
-.side a[href$='#me']:hover,
-.side a[href$='#ot']:hover,
-.side a[href$='#ev']:hover,
-.side a[href$='#at']:hover,
-.side a[href$='#mo']:hover {
+.side a[href$='Official']:hover,
+.side a[href$='News']:hover,
+.side a[href$='Discussion']:hover,
+.side a[href$='Views']:hover,
+.side a[href$='Media']:hover,
+.side a[href$='Topic']:hover,
+.side a[href$='Event']:hover,
+.side a[href$='Action']:hover,
+.side a[href$='Moderator']:hover {
     text-decoration: underline;
 }
 
-.side a[href$='#md'] { background-color: #ff2d21; color: white; }
-.side a[href$='#nw'] { background-color: #499bc9; color: white; }
-.side a[href$='#ds'] { background-color: #009051; color: white; }
-.side a[href$='#ac'] { background-color: #cccccc; color: #404040; }
-.side a[href$='#me'] { background-color: #9d45b8; color: white; }
-.side a[href$='#ot'] { background-color: #ffff00; color: #404040; }
-.side a[href$='#ev'] { background-color: #ff9900; color: #404040; }
-.side a[href$='#at'] { background-color: #99ffff; color: #404040; }
-.side a[href$='#mo'] { background-color: black;   color: white; }
+.side a[href$='Official']   { background-color: #ff2d21; color: white; }
+.side a[href$='News']       { background-color: #499bc9; color: white; }
+.side a[href$='Discussion'] { background-color: #009051; color: white; }
+.side a[href$='Views']      { background-color: #cccccc; color: #404040; }
+.side a[href$='Media']      { background-color: #9d45b8; color: white; }
+.side a[href$='Topic']      { background-color: #ffff00; color: #404040; }
+.side a[href$='Event']      { background-color: #ff9900; color: #404040; }
+.side a[href$='Action']     { background-color: #99ffff; color: #404040; }
+.side a[href$='Moderator']  { background-color: black;   color: white; }
 
 .side .md a[href$='/r/MaydayPAC/'] {
     background-color: #f0f0f0;
