@@ -185,7 +185,7 @@ light gray: #f0f0f0
     color: rgba(255, 255, 255, 1);
 }
 
-#header-img.default-header {
+#header-img {
     bottom: 2px;
     height: 42px;
     margin: 0 0.5em 0 0;
@@ -559,8 +559,8 @@ light gray: #f0f0f0
 .linkflair-mayday-humor .linkflairlabel           { background-color: #ffff00; border-color: #ffff00; color: #404040; }
 .linkflair-mayday-events .linkflairlabel          { background-color: #ff9900; border-color: #ff9900; color: #404040; }
 .linkflair-mayday-actions .linkflairlabel         { background-color: #99ffff; border-color: #99ffff; color: #404040; }
-.linkflair-mayday-moderator .linkflairlabel       { background-color: black;   border-color: black;   color: white; }
-.flair-mayday-moderator                           { background-color: black;   border-color: black;   color: white; }
+.linkflair-mayday-moderator .linkflairlabel       { background-color: #404040; border-color: #404040; color: white; }
+.flair-mayday-moderator                           { background-color: #404040; border-color: #404040; color: white; }
 
 /* END: FLAIR */
 
@@ -602,7 +602,7 @@ light gray: #f0f0f0
 .side a[href$='Topic']      { background-color: #ffff00; color: #404040; }
 .side a[href$='Event']      { background-color: #ff9900; color: #404040; }
 .side a[href$='Action']     { background-color: #99ffff; color: #404040; }
-.side a[href$='Moderator']  { background-color: black;   color: white; }
+.side a[href$='Moderator']  { background-color: #404040; color: white; }
 
 .side .md a[href$='/r/MaydayPAC/'] {
     background-color: #f0f0f0;
